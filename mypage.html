@@ -5,12 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       .with-box-shadow {
+            box-shadow:
+                1px 2px 4px hsl(220deg 60% 50%);
+            }
+
+            .with-drop-shadow {
+            filter: drop-shadow(
+                1px 2px 4px hsl(220deg 60% 50%)
+            );
+            }
+
+            .box {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+
+            /* .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            height: 100vh;
+            }
+            body {
+            padding: 0;
+            } */
+</style>
 </head>
 <body>
+    
+    <br>
+    <div class="wrapper">
+        <div class="box with-box-shadow">
+            box-shadow
+        </div>
+        <div class="box with-drop-shadow">
+            drop-shadow
+        </div>
+    </div>
+
     <div>
           <img src="https://media.istockphoto.com/id/1353429720/photo/vogel-state-park-georgia-usa-in-autumn.jpg?b=1&s=170667a&w=0&k=20&c=VCVm-vMRStQXWJ5yqt1C5yvNqRzbsTtN_qkE-SWGEYE=" id="pp" alt="">
           <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?b=1&s=170667a&w=0&k=20&c=VqVR2PMyaneOTn8f6wgEgM2V-zsHCzFMk6Wnm_kAf_k=" id="bp" alt="">
     </div>
+
+    <br>
+    <br>
+    
+    
 
 
 
@@ -19,3 +68,7 @@
     <script src="my.js"></script>
 </body>
 </html>
+<!-- box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; -->
+
+
+
